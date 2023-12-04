@@ -10,7 +10,8 @@ In this project, I have utilized Webpack to orchestrate the modular construction
 
 ### Key Features
 
-- **AWS Integration**: 
+- **AWS Integration**:
+
   - **S3 Bucket**: Creation and configuration of AWS S3 buckets for efficient asset storage and management.
   - **CloudFront**: Setup and integration of AWS CloudFront for content delivery optimization.
   - **IAM User**: Configuration of IAM users for secure and controlled access to AWS services.
@@ -18,8 +19,11 @@ In this project, I have utilized Webpack to orchestrate the modular construction
 - **CSS Scoping Techniques**: Implementation of advanced CSS scoping methods to maintain style integrity across different micro frontends.
 
 - **Framework Diversity**: This application is a melting pot of different frameworks, showcasing how they can coexist in a micro frontend architecture. It includes:
+
   - **React**: Leveraging React for its component-based architecture and efficient rendering.
   - **Angular**: Utilizing Angular for its comprehensive framework capabilities in larger parts of the application.
+
+  Lazy loading and React Suspense to improve performance
 
 ## Learning Outcomes
 
