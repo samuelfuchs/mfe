@@ -1,33 +1,35 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import MaterialLink from '@material-ui/core/Link';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import MaterialLink from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
+import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { Person, Twitter, Instagram } from "@material-ui/icons";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+      {"Copyright © "}
       <MaterialLink component={Link} to="/" color="inherit">
-        Your Website
-      </MaterialLink>{' '}
+        PrepTalk
+      </MaterialLink>{" "}
       {new Date().getFullYear()}
-      {'.'}
+      {"."}
     </Typography>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
-  '@global': {
+  "@global": {
     a: {
-      textDecoration: 'none',
+      textDecoration: "none",
     },
   },
   icon: {
@@ -45,12 +47,12 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   cardMedia: {
-    paddingTop: '56.25%', // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
@@ -60,8 +62,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
   },
 }));
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   const classes = useStyles();
@@ -79,7 +79,7 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              Home Page
+              Welcome to PrepTalk
             </Typography>
             <Typography
               variant="h5"
@@ -87,68 +87,204 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              Master Your Next Interview with Confidence! Overcome Interview
+              Anxiety. Exude Confidence. Land Your Dream Job.
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justifyContent="center">
-                <Grid item>
-                  <Link to="/pricing">
-                    <Button variant="contained" color="primary">
-                      Pricing
-                    </Button>
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link to="/pricing">
-                    <Button variant="outlined" color="primary">
-                      Pricing
-                    </Button>
-                  </Link>
-                </Grid>
-              </Grid>
-            </div>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Be Prepared, Be Confident, Be Yourself.
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              InterviewAce is your personal interview coach, designed to help
+              you conquer interview nerves and showcase your best self. Whether
+              you're a fresh graduate, a professional seeking a career leap, or
+              anyone in between, InterviewAce tailors your preparation to your
+              unique needs.
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Features That Set You Up for Success:
+            </Typography>
+            <List dense={true}>
+              <ListItem>
+                <ListItemText
+                  primary="Extensive Question Library: "
+                  secondary={
+                    "Dive into a vast pool of common and challenging interview questions across various industries."
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="AI-Powered Feedback: "
+                  secondary={
+                    "Get real-time analysis on your speech clarity, body language, and overall performance."
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Customizable Mock Interviews: "
+                  secondary={
+                    "Tailor your practice sessions with adjustable difficulty levels and specific job roles."
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Progress Tracking: "
+                  secondary={
+                    "Witness your growth with our intuitive progress tracker and set personalized goals."
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Community Support: "
+                  secondary={
+                    "Join a community of aspirants like you, share experiences, and learn together."
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Expert Tips & Resources: "
+                  secondary={
+                    "Access a wealth of resources including interview tips, body language guides, and success stories."
+                  }
+                />
+              </ListItem>
+            </List>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Why Choose PrepTalk?
+            </Typography>
+            <ListItem>
+              <ListItemText
+                primary="Reduce Anxiety:"
+                secondary={
+                  "Our unique AI analysis helps identify and mitigate factors that contribute to interview nervousness."
+                }
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Personalized Experience:"
+                secondary={
+                  "Enjoy a tailored approach to interview preparation that recognizes and adapts to your individual strengths and areas for improvement."
+                }
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="Practice Anytime, Anywhere:"
+                secondary={
+                  "With InterviewAce, turn any place into your practice ground. Convenient, flexible, and always ready when you are."
+                }
+              />
+            </ListItem>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Ready to Ace Your Next Interview?
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              <Button variant="outlined">Get Access now</Button>
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Connect With Us:
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Stay updated with the latest tips and updates from InterviewAce.
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Follow us on:
+            </Typography>
+            <ListItem>
+              <ListItemIcon>
+                <Instagram />
+              </ListItemIcon>
+              <ListItemText primary="Instagram" />
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <Twitter />
+              </ListItemIcon>
+              <ListItemText primary="X (Formerly Twitter)" />
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <Person />
+              </ListItemIcon>
+              <ListItemText primary="Blog" />
+            </ListItem>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Testimonials:
+            </Typography>
+            <ListItem>
+              <ListItemText
+                primary="InterviewAce was a game-changer for me. I went from dreading interviews to feeling excited and prepared. Highly recommend!"
+                secondary={"Adam Smith"}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                primary="With this app, I noticed a significant improvement in my confidence level. The AI feedback is incredibly insightful."
+                secondary={"Angelina Smith"}
+              />
+            </ListItem>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          PrepTalk
         </Typography>
         <Typography
           variant="subtitle1"
@@ -156,7 +292,8 @@ export default function Album() {
           color="textSecondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          Get Started with PrepTalk Today – Your Path to Interview Mastery
+          Awaits!
         </Typography>
         <Copyright />
       </footer>
