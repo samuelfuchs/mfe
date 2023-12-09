@@ -12,6 +12,7 @@ import MaterialLink from "@material-ui/core/Link";
 import { Link } from "react-router-dom";
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import { Person, Twitter, Instagram } from "@material-ui/icons";
+import Footer from "./Footer";
 
 function Copyright() {
   return (
@@ -116,6 +117,19 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
+              About Us
+            </Typography>
+            <Link to="/pricing">
+              <Button variant="contained" color="primary">
+                About Us
+              </Button>
+            </Link>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
               Features That Set You Up for Success:
             </Typography>
             <List dense={true}>
@@ -214,7 +228,9 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
-              <Button variant="outlined">Get Access now</Button>
+              <Button color="primary" variant="outlined">
+                Get Access now
+              </Button>
             </Typography>
             <Typography
               variant="h5"
@@ -281,23 +297,8 @@ export default function Album() {
           </Container>
         </div>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          PrepTalk
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
-          Get Started with PrepTalk Today – Your Path to Interview Mastery
-          Awaits!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+
+      <Footer />
     </React.Fragment>
   );
 }
